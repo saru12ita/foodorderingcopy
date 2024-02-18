@@ -13,7 +13,7 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Jhatpat Foods </title>
+	<title> FAST Foods </title>
 	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
 
 	<style>
@@ -34,9 +34,9 @@ session_start();
 </head>
 <body>
 	<div class=" bg-dark pt-3 pb-3">
-		<a href="index.php"><button type="button" class="btn btn-success ml-3" style="float:left;">HOME</button></a>
-		<a href="user.php"><button type="button" class="btn btn-danger mr-3" style="float:right;">USER</button></a>
-		<h1 class="text-center text-light">JHATPAT FOODS</h1>
+	<a href="../index.php"><button type="button" class="btn btn-success ml-3" style="float:left;">HOME</button></a>
+		<a href="account.php"><button type="button" class="btn btn-danger mr-3" style="float:right;">USER</button></a>
+		<h1 class="text-center text-light">FAST  FOODS</h1>
 	</div>
 
 	<div class="container bg-dark text-light text-center main">
@@ -44,9 +44,9 @@ session_start();
 		<h4>Please select any one:</h4>
 
 		<div>
-			<a href="../menu/menu.php"><button type="button" class="btn btn-primary my-3 px-5">Vashi</button></a><br>
-			<a href="../menu/menu.php"><button type="button" class="btn btn-primary my-3 px-5">Panvel</button></a><br>
-			<a href="../menu/menu.php"><button type="button" class="btn btn-primary my-3 px-5">Thane</button></a><br>
+		<a href="../Home.php"><button type="button" class="btn btn-primary my-3 px-5">Koteshwor</button></a><br>
+			<a href="../Home.php"><button type="button" class="btn btn-primary my-3 px-5">Sankhamul</button></a><br>
+			<a href="../Home.php"><button type="button" class="btn btn-primary my-3 px-5">Putalisadak</button></a><br>
 		</div>
 	</div>
 

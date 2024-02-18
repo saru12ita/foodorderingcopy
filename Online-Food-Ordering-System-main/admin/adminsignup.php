@@ -9,21 +9,20 @@
 
     include('../dbcon.php'); // Database connection
 
-    if (isset($_POST['login'])) {
+    if (isset($_POST['signup'])) {
         $uname = $_POST['uname'];
         $pass = $_POST['pass'];
 
-        // Fetch admin from database
-        $query = "SELECT * FROM `admin` WHERE `username` = '$uname' AND `password` = '$pass'";
+        // Insert new admin into database
+        $query = "INSERT INTO `admin` (`username`, `password`) VALUES ('$uname', '$pass')";
         $result = mysqli_query($conn, $query);
 
-        if (mysqli_num_rows($result) == 1) {
-            $row = mysqli_fetch_assoc($result);
-            $_SESSION['aid'] = $row['id'];
-            header('location: admindash.php');
+        if ($result) {
+            // Redirect to admin login page after successful signup
+            header('location: ../index.php');
             exit;
         } else {
-            echo "<script>alert('Username and Password not match');</script>";
+            echo "<script>alert('Failed to register admin');</script>";
         }
     }
 ?>
@@ -31,19 +30,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Admin Login</title>
+    <title>Admin Signup</title>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
 
     <div class=" bg-dark pt-3 pb-3">
-        <a href="../index.php"><button type="button" class="btn btn-success ml-3" style="float:right;">HOME</button></a>
-        <a href="adminsignup.php"><button type="button" class="btn btn-danger mr-3" style="float:left;"><< Back</button></a>
+        <a href="../Home.php"><button type="button" class="btn btn-success ml-3" style="float:right;">HOME</button></a>
+        <a href="loggin.php"><button type="button" class="btn btn-danger mr-3" style="float:left;"><< Back</button></a>
         <h1 class="text-center text-light">Online FOODS</h1>
     </div>
 
     <div class="mt-5 bg-info container text-center text-white">
-        <h1>ADMIN LOGIN</h1>
+        <h1>ADMIN SIGNUP</h1>
     </div>
 
     <div class="container mt-5">
@@ -52,20 +51,19 @@
                 <div class="bg-light p-4">
                     <form method="post">
                         <div class="form-group">
-                            <label for="login_uname">Username</label>
-                            <input type="text" class="form-control" id="login_uname" name="uname" required>
+                            <label for="signup_uname">New Username</label>
+                            <input type="text" class="form-control" id="signup_uname" name="uname" required>
                         </div>
                         <div class="form-group">
-                            <label for="login_pass">Password</label>
-                            <input type="password" class="form-control" id="login_pass" name="pass" required>
+                            <label for="signup_pass">New Password</label>
+                            <input type="password" class="form-control" id="signup_pass" name="pass" required>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block" name="login">Login</button>
+                        <button type="submit" class="btn btn-success btn-block" name="signup">Signup</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
     <script src="bootstrap/jss/jquery.min.js"></script>
     <script src="bootstrap/jss/popper.min.js"></script>
     <script src="bootstrap/jss/bootstrap.min.js"></script>

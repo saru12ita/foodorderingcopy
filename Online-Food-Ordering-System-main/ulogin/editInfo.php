@@ -43,8 +43,8 @@
 	
 	<div class="bg-dark pt-3 pb-3">
 		<a href="account.php"><button type="button" class="btn btn-success ml-3" style="float:left;">BACK</button></a>
-		<a href="log-reg.php"><button type="button" class="btn btn-danger mr-3" style="float:right;">CART</button></a>
-		<h1 class="text-center text-light">JHATPAT FOODS</h1>
+		<a href="../index.php"><button type="button" class="btn btn-danger mr-3" style="float:right;">CART</button></a>
+		<h1 class="text-center text-light">FAST FOODS</h1>
 	</div>
 
 	<div class="container bg-dark text-light text-center main">

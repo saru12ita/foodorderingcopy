@@ -191,7 +191,7 @@ session_start();
 		</div>
 		
 		<div class="site-title">
-			<h1>Jhatpat Foods</h1>
+			<h1>Online Foods</h1>
 		</div>
 		<div class="site-yellow-img">
 			<!--<img src="cart.png" class="img-fluid">
@@ -201,9 +201,9 @@ session_start();
 			<?php
 				if (isset($_SESSION['uid'])) 
 				{
-					?><a href="menu/index.php" >MENU</a><?php
+					?><a href="admin\addnewitem.php" >MENU</a><?php
 				}else{
-					?><a href="admin\menudb.php" >MENU</a><?php
+					?><a href="admin\addnewitem.php" >MENU</a><?php
 				}
 				?>
 		</div>

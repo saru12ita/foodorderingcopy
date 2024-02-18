@@ -65,8 +65,8 @@
 	
 	<div class="bg-dark pt-3 pb-3">
 		<a href="../index.php"><button type="button" class="btn btn-success ml-3" style="float:left;">HOME</button></a>
-		<a href="../menu/cart.php"><button type="button" class="btn btn-danger mr-3" style="float:right;">CART</button></a>
-		<h1 class="text-center text-light">JHATPAT FOODS</h1>
+		<a href="../Home.php"><button type="button" class="btn btn-danger mr-3" style="float:right;">CART</button></a>
+		<h1 class="text-center text-light">FAST FOODS</h1>
 	</div>
 
 	<div class="text-center pt-5">
@@ -100,8 +100,6 @@
 			</tr>
 		</table>
 	</div>
-
-
 	<script src="bootstrap/jss/jquery.min.js"></script>
 	<script src="bootstrap/jss/popper.min.js"></script>
 	<script src="bootstrap/jss/bootstrap.min.js"></script>		
