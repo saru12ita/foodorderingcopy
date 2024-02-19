@@ -10,7 +10,6 @@
 		<a href="admindash.php"><button style="float: left;" class="btn btn-success ml-3"><< BACK</button></a>
 		<h1>WELCOME TO ADMIN DASHBOARD</h1>	
 	</div>
-
 	<table align="center" style="margin-top: 20px">
 		<form action="updateitem.php" method="post">
 			<tr>
